@@ -3,7 +3,30 @@
 ## Introduction
 A collection of useful settings and scripts for SkyWalking stakeholders to setup CHAOSS GrimoireLab in seconds.
 
-Collects Git, GitHub data from around 30 SkyWalking Ecosystem projects.
+Collects Git, GitHub data from 30 SkyWalking Ecosystem projects(please open a PR if more projects come in).
+
+Apache Official             | SkyAPM            | Others
+------------                | -------------     | -------------
+skywalking                  |   SkyAPM-dotnet   | sourceplusplus-SourceMarker
+skywalking-rocketbot-ui     |   SkyAPM-go2sky
+skywalking-website          |   SkyAPM-go2sky-plugins
+skywalking-nginx-lua        |   SkyAPM-php-sdk
+skywalking-kong             |   SkyAPM-cpp2sky
+skywalking-python           |   SkyAPM-java-plugin-extensions
+skywalking-nodejs           |   SkyAPM-uranus
+skywalking-client-js        |   SkyAPM-nodejs
+skywalking-rust             |   SkyAPM-mini-program-monitor
+skywalking-satellite
+skywalking-cli
+skywalking-kubernetes
+skywalking-swck
+skywalking-docker
+skywalking-data-collect-protocol
+skywalking-query-protocol
+skywalking-goapi
+skywalking-agent-test-tool
+skywalking-infra-e2e
+skywalking-eyes
 
 ## CHAOSS Introduction
 [CHAOSS Metrics](https://chaoss.community/metrics/)
