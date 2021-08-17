@@ -35,7 +35,7 @@ skywalking-eyes
 
 Note the affliation analysis is based on a email domains, which wrongly identifies `qq.com and vip.qq.com` as Tencent employees.
 
-So the prodided version removes this chunk from organizations.json in `default-grimoirelab-settings`.
+So the provided version removes this chunk from organizations.json in `default-grimoirelab-settings`.
 ```json
 "Tencent": [
     {
