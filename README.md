@@ -13,17 +13,17 @@ Collects Git, GitHub data from around 30 SkyWalking Ecosystem projects.
 Note the affliation analysis is based on a email domains, which wrongly identifies `qq.com and vip.qq.com` as Tencent employees.
 
 So the prodided version removes this chunk from organizations.json in `default-grimoirelab-settings`.
-```
-        "Tencent": [
-            {
-                "domain": "qq.com",
-                "is_top": true
-            },
-            {
-                "domain": "vip.qq.com",
-                "is_top": true
-            }
-        ],
+```json
+"Tencent": [
+    {
+        "domain": "qq.com",
+        "is_top": true
+    },
+    {
+        "domain": "vip.qq.com",
+        "is_top": true
+    }
+],
 ```
 
 Example Screenshot from Dashboard - 
@@ -43,29 +43,36 @@ Example Screenshot from Dashboard -
 
 4. You will need to increase the `max_map_count` for Elasticsearch before bringing up the ES container, else it will fail.
 
-        WSL2 on Windows machine- 
-        `
-        wsl -d docker-desktop;
-        sysctl -w vm.max_map_count=262144
-        `
+WSL2 on Windows machine- 
 
-        Linux
-        ```console
-        sysctl -w vm.max_map_count=262144
-        ```
+```console
+wsl -d docker-desktop;
+sysctl -w vm.max_map_count=262144
+```
 
-        MacOS
-        ```
-        $ screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
-        (then run:) sysctl -w vm.max_map_count=262144
-        ```
+Linux
+
+```console
+sysctl -w vm.max_map_count=262144
+```
+
+MacOS
+
+```console
+$ screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
+(then run:) sysctl -w vm.max_map_count=262144
+```
 
 5. Start the docker containers
 
-        `docker-compose up -d`
+```console
+docker-compose up -d
+```
 
 
 6. After the initialization step, go to `localhost:5601` to view the kibana dashboard of GrimoireLab.
 
-        Note the data will not appear in a short time if your access to GitHub is slow/ unstable, 
-        try to use [FastGitHub](https://github.com/dotnetcore/FastGithub) to accelerate the process, else it could take you hours before the projects are fully collected.
+Note the data will not appear in a short time if your access to GitHub is slow/ unstable, 
+try to use 
+[FastGitHub](https://github.com/dotnetcore/FastGithub) 
+to accelerate the process, else it could take you hours before the projects are fully collected.
