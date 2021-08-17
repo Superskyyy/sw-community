@@ -35,32 +35,37 @@ Example Screenshot from Dashboard -
 ## Current Usage 
 ### Manual - 
 
-Copy the `projects.json` to your `default-grimoirelab-settings` folder.
+1. Download the latest release from GrimoireLab repository, unzip/untar.
 
-You may wish to set more than one GitHub access token in `setup.cfg` given hourly GitHub API limits.
+2. Copy the `projects.json` to the `default-grimoirelab-settings` folder.
 
-You will need to increase the `max_map_count` for Elasticsearch before bringing up the ES container, else it will fail.
+3. You may wish to set more than one GitHub access token in `setup.cfg` given hourly GitHub API limits.
 
-WSL2 on Windows machine- 
-`
-wsl -d docker-desktop;
-sysctl -w vm.max_map_count=262144
-`
+4. You will need to increase the `max_map_count` for Elasticsearch before bringing up the ES container, else it will fail.
 
-Linux
-```console
-sysctl -w vm.max_map_count=262144
-```
+        WSL2 on Windows machine- 
+        `
+        wsl -d docker-desktop;
+        sysctl -w vm.max_map_count=262144
+        `
 
-MacOS
-```
-$ screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
-(then run:) sysctl -w vm.max_map_count=262144
-```
-then `docker-compose up -d`
+        Linux
+        ```console
+        sysctl -w vm.max_map_count=262144
+        ```
+
+        MacOS
+        ```
+        $ screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
+        (then run:) sysctl -w vm.max_map_count=262144
+        ```
+
+5. Start the docker containers
+
+        `docker-compose up -d`
 
 
-After the initialization step, go to `localhost:5601` to view the kibana dashboard of GrimoireLab.
+6. After the initialization step, go to `localhost:5601` to view the kibana dashboard of GrimoireLab.
 
-Note the data will not appear in a short time if your access to GitHub is slow/ unstable, 
-try to use [FastGitHub](https://github.com/dotnetcore/FastGithub) to accelerate the process, else it could take you hours before the projects are fully collected.
+        Note the data will not appear in a short time if your access to GitHub is slow/ unstable, 
+        try to use [FastGitHub](https://github.com/dotnetcore/FastGithub) to accelerate the process, else it could take you hours before the projects are fully collected.
