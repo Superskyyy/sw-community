@@ -10,6 +10,28 @@ Collects Git, GitHub data from around 30 SkyWalking Ecosystem projects.
 
 [GrimoireLab](https://chaoss.community/software/#user-content-grimoirelab)
 
+Note the affliation analysis is based on a email domains, which wrongly identifies `qq.com and vip.qq.com` as Tencent employees.
+
+So remove this from organizations.json in `default-grimoirelab-settings`
+```
+        "Tencent": [
+            {
+                "domain": "qq.com",
+                "is_top": true
+            },
+            {
+                "domain": "vip.qq.com",
+                "is_top": true
+            }
+        ],
+```
+
+Example Screenshot from Dashboard - 
+
+![localhost_5601_app_kibana (1)](https://user-images.githubusercontent.com/26076517/129667010-3bd334c1-e4aa-40e7-bb83-05ceb34ea59b.png)
+
+![localhost_5601_app_kibana (2)](https://user-images.githubusercontent.com/26076517/129667123-7a1c5545-5be3-4bb7-afdc-d82b3e8e2f84.png)
+
 ## Current Usage 
 ### Manual - 
 
@@ -25,6 +47,16 @@ wsl -d docker-desktop;
 sysctl -w vm.max_map_count=262144
 `
 
+Linux
+```console
+sysctl -w vm.max_map_count=262144
+```
+
+MacOS
+```
+$ screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
+(then run:) sysctl -w vm.max_map_count=262144
+```
 then `docker-compose up -d`
 
 
