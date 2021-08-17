@@ -12,7 +12,7 @@ Collects Git, GitHub data from around 30 SkyWalking Ecosystem projects.
 
 Note the affliation analysis is based on a email domains, which wrongly identifies `qq.com and vip.qq.com` as Tencent employees.
 
-So remove this from organizations.json in `default-grimoirelab-settings`
+So the prodided version removes this chunk from organizations.json in `default-grimoirelab-settings`.
 ```
         "Tencent": [
             {
