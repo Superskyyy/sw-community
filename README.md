@@ -27,6 +27,7 @@ skywalking-goapi
 skywalking-agent-test-tool
 skywalking-infra-e2e
 skywalking-eyes
+skywalking-java
 
 ## CHAOSS Introduction
 [CHAOSS Metrics](https://chaoss.community/metrics/)
