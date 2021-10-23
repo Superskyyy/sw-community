@@ -70,14 +70,14 @@ Example Screenshot from Dashboard -
 WSL2 on Windows machine- 
 
 ```console
-wsl -d docker-desktop;
-sysctl -w vm.max_map_count=262144
+wsl ^
+sudo sysctl -w vm.max_map_count=262144
 ```
 
 Linux
 
 ```console
-sysctl -w vm.max_map_count=262144
+sudo sysctl -w vm.max_map_count=262144
 ```
 
 MacOS
