@@ -8751,6 +8751,16 @@
                 "is_top": true
             }
         ],
+        "Tencent": [
+            {
+                "domain": "intl.cloud.tencent.com",
+                "is_top": true
+            },
+            {
+                "domain": "tencent.com",
+                "is_top": true
+            }
+        ],
         "Tendril": [
             {
                 "domain": "tendrilinc.com",
