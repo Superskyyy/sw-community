@@ -29,6 +29,23 @@ skywalking-infra-e2e
 skywalking-eyes
 skywalking-java
 
+## Identified data sources 
+For the SkyWalking ecosystem, major data sources are
+1. **Git** for commit logs - timezone, code, developer
+2. **GitHub** for 
+    - GitHub repo metadata - star, fork, watcher
+    - GitHub PRs - efficiency, timing, backlog
+    - GitHub Issues - efficiency, backlog, timing
+    - GitHub comments - collaboration network, count, 
+    - GitHub events - issue labels
+3. **mail list** (RSS) - sentiment analysis, count
+4. **IRC channels** - Slack + QQ - nlp task, count
+5. **Social media** - Twitter - social impact
+6. **Q&A platforms** - StackExchange - user generated data
+
+From the above data sources, we can conduct quantitative and qualitative analysis. 
+
+
 ## CHAOSS Introduction
 [CHAOSS Metrics](https://chaoss.community/metrics/)
 
@@ -55,6 +72,7 @@ Example Screenshot from Dashboard -
 ![localhost_5601_app_kibana (1)](https://user-images.githubusercontent.com/26076517/129667010-3bd334c1-e4aa-40e7-bb83-05ceb34ea59b.png)
 
 ![localhost_5601_app_kibana (2)](https://user-images.githubusercontent.com/26076517/129667123-7a1c5545-5be3-4bb7-afdc-d82b3e8e2f84.png)
+
 
 ## Current Usage 
 ### Manual - 
