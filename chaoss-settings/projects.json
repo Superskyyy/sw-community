@@ -5,6 +5,27 @@
         ],
         "github": [
             "git://github.com/apache/skywalking"
+        ],
+        "remo": [
+            "https://lists.apache.org/api/atom.lua?list=dev@skywalking.apache.org"
+        ],
+        "github:issue": [
+            "https://github.com/apache/skywalking"
+        ],
+        "github:pull": [
+            "https://github.com/apache/skywalking"
+        ],
+        "github2:issue": [
+            "https://github.com/apache/skywalking"
+        ],
+        "github2:pull": [
+            "https://github.com/apache/skywalking"
+        ],
+        "githubql": [
+            "https://github.com/apache/skywalking"
+        ],
+        "github:repo": [
+            "https://github.com/apache/skywalking"
         ]
     },
     "skywalking-java": {
