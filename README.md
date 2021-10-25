@@ -1,5 +1,10 @@
 # SkyWalking Community Analysis
 
+TODO List:
+1. Project config generator
+2. More organizations domain
+3. Custom dashboard for missing visualizations
+
 ## Introduction
 A collection of useful settings and scripts for SkyWalking stakeholders to setup CHAOSS GrimoireLab in seconds.
 
