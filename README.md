@@ -28,7 +28,7 @@ skywalking-agent-test-tool
 skywalking-infra-e2e
 skywalking-eyes
 skywalking-java
-
+skywalking-showcase
 ## Identified data sources 
 For the SkyWalking ecosystem, major data sources are
 1. **Git** for commit logs - timezone, code, developer
